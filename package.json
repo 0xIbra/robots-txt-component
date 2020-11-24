@@ -1,23 +1,21 @@
 {
   "name": "@ibragim64/robots-txt-component",
   "version": "0.0.1",
-  "description": "",
+  "description": "Lightweight robots.txt parsing component without any external dependencies for Node.js.",
   "main": "src/component.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "robots.txt",
-    "robots",
-    "robots-parser",
-    "robots-exclusion-standard",
-    "javascript",
-    "js",
-    "node-js",
-    "robots-txt",
-    "crawler",
-    "crawlers"
-  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibragim64/robots-txt-component.git"
+  },
+  "keywords": ["robots.txt", "robots", "robots-parser", "robots-exclusion-standard", "javascript", "js", "node-js", "robots-txt", "crawler", "crawlers"],
   "author": "Ibragim Abubakarov",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ibragim64/robots-txt-component/issues"
+  },
+  "homepage": "https://github.com/ibragim64/robots-txt-component",
+  "dependencies": {}
 }
