@@ -1,6 +1,6 @@
 {
   "name": "@ibragim64/robots-txt-component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lightweight robots.txt parsing component without any external dependencies for Node.js.",
   "main": "src/component.js",
   "scripts": {

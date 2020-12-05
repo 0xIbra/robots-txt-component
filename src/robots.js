@@ -15,6 +15,10 @@ class Robots {
         this.parser = new Parser(this.rawRobots)
     }
 
+    getRawContent() {
+        return this.rawRobots
+    }
+
     canCrawl(url, userAgent) {
         if (this.parser === null) {
             throw new Error('[error] You must call the "init" function before performing any operations.')

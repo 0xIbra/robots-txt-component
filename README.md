@@ -4,7 +4,7 @@ robots-txt-component
 
 Installation
 ------------
-**NPM**
+**npm**  
 `npm install @ibragim64/robots-txt-component --save`
 
 
@@ -19,7 +19,7 @@ let robots = new RobotsParser('https://www.example.com', true) # allowOnNeutral 
 await robots.init() # Will attempt to retrieve the robots.txt file natively and parse it.
 ```
 
-#### Check for allowance && other usages:
+#### Check for allowance and other usages:
 ```javascript
 let robots = new RobotsParser('https://www.example.com', true) // # allowOnNeutral = true
 await robots.init() // # Will attempt to retrieve the robots.txt file natively and parse it.
@@ -30,6 +30,9 @@ if (robots.canCrawl(url, userAgent)) { // # Will check the url against all the r
     // # Your logic
 }
 
-// # Get the crawl delay for a user agent
+// # get the crawl delay for a user agent
 let crawlDelay = robots.getCrawlDelay('Bingbot')
+
+// # get raw robots.txt content
+let content = robots.getRawContent()
 ```
