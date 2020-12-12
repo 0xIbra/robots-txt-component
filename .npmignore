@@ -3,5 +3,6 @@ node_modules/
 .idea/
 .vscode/
 tests/
+.circleci/
 robots.txt
 test.js
