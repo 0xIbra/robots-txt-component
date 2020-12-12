@@ -59,7 +59,7 @@ jobs:
 
 workflows:
   version: 2
-  test-spider:
+  test-robots-component:
     jobs:
       - node-14
       - node-12
