@@ -1,3 +1,3 @@
-const Robots = require('./robots')
+const Robots = require('./robots');
 
-module.exports = Robots
+module.exports = Robots;

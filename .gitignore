@@ -1,4 +1,5 @@
 node_modules/
 robots.txt
 test.js
-.idea
+.idea/
+package-lock.json

@@ -1,0 +1,66 @@
+version: 2
+jobs:
+  node-14:
+    docker:
+      - image: circleci/node:14
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - robots-modules-{{ checksum "package.json" }}
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: robots-modules-{{ checksum "package.json" }}
+
+      - run: npm run tests
+
+  node-12:
+    docker:
+      - image: circleci/node:12
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - robots-modules-{{ checksum "package.json" }}
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: robots-modules-{{ checksum "package.json" }}
+
+      - run: npm run tests
+
+  node-10:
+    docker:
+      - image: circleci/node:10
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - robots-modules-{{ checksum "package.json" }}
+
+      - run: npm install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: robots-modules-{{ checksum "package.json" }}
+
+      - run: npm run tests
+
+workflows:
+  version: 2
+  test-spider:
+    jobs:
+      - node-14
+      - node-12
+      - node-10

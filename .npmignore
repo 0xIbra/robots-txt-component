@@ -1,5 +1,7 @@
+.git/
 node_modules/
 .idea/
 .vscode/
+tests/
 robots.txt
 test.js

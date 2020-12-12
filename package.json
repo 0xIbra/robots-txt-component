@@ -1,21 +1,36 @@
 {
-  "name": "@ibragim64/robots-txt-component",
-  "version": "0.0.2",
+  "name": "robots-txt-component",
+  "version": "0.0.3",
   "description": "Lightweight robots.txt parsing component without any external dependencies for Node.js.",
   "main": "src/component.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --exit --timeout=600000 tests/main.test.js",
+    "tests": "mocha --exit --timeout=600000 tests/main.test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ibragim64/robots-txt-component.git"
   },
-  "keywords": ["robots.txt", "robots", "robots-parser", "robots-exclusion-standard", "javascript", "js", "node-js", "robots-txt", "crawler", "crawlers"],
+  "keywords": [
+    "robots.txt",
+    "robots",
+    "robots-parser",
+    "robots-exclusion-standard",
+    "javascript",
+    "js",
+    "node-js",
+    "robots-txt",
+    "crawler",
+    "crawlers"
+  ],
   "author": "Ibragim Abubakarov",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ibragim64/robots-txt-component/issues"
   },
   "homepage": "https://github.com/ibragim64/robots-txt-component",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  }
 }
