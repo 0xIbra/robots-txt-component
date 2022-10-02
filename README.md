@@ -1,6 +1,7 @@
 robots-txt-component
 ====================
-[![CircleCI](https://circleci.com/gh/ibragim64/robots-txt-component/tree/master.svg?style=shield&circle-token=f1dbf29146b4a5b88e844dcb3f59bf6ed45a6146)](https://github.com/ibragim64/robots-txt-component/tree/master)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/ibra-akv/robots-txt-component/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/ibra-akv/robots-txt-component/tree/master)
+
 > Lightweight robots.txt parsing component **without any external dependencies** for **Node.js**.
 
 Installation
