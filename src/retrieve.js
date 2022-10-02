@@ -16,7 +16,12 @@ function prepareUrl(link) {
 
 async function makeRequest(handler, link) {
     return await new Promise(resolve => {
-        handler.get(link, res => {
+        let headers = {
+            'Accept': '*/*',
+            'User-Agent': 'NodeAgent'
+        };
+
+        handler.get(link,{ headers }, res => {
             if (res.statusCode === 301) {
                 let locationHeader = res.headers['location'];
 
