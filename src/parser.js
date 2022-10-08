@@ -12,7 +12,12 @@ const lineEndings = /[\r\n]+/g;
 class Parser {
 
     constructor (rawRobotsContent) {
-        this.instances = {};
+        this.instances = {
+            '*': {
+                rules: [],
+                crawlDelay: 0
+            }
+        };
         this.sitemaps = [];
         this.host = null;
         this.init(rawRobotsContent);
