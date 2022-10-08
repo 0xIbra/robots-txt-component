@@ -28,7 +28,21 @@ class Robots {
 
     async init() {
         if (this.rawRobots == null) {
+            let urlObject = new URL(this.url);
+            if (!urlObject.host.startsWith('www.')) {
+                urlObject.host = `www.${urlObject.host}`;
+                urlObject.hostname = urlObject.host;
+
+                this.url = urlObject.toString();
+            }
             this.rawRobots = await Retrieve(this.url);
+            if (this.rawRobots == null) {
+                urlObject.host = urlObject.host.slice(4);
+                urlObject.hostname = urlObject.host;
+                this.url = urlObject.toString();
+
+                this.rawRobots = await Retrieve(this.url);
+            }
         }
 
         if (this.rawRobots != null && this.parser == null) {

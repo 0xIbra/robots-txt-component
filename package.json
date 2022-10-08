@@ -1,6 +1,6 @@
 {
   "name": "robots-txt-component",
-  "version": "0.0.4",
+  "version": "0.0.5-dev",
   "description": "Lightweight robots.txt parsing component without any external dependencies for Node.js.",
   "main": "src/component.js",
   "scripts": {
